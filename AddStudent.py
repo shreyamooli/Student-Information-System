@@ -23,7 +23,7 @@ def Add():
     coursename = e3.get()
     fee = e4.get()
 
-    mysqldb=mysql.connector.connect(host="localhost",user="root",password="dba1929",database="student_information_system")
+    mysqldb=mysql.connector.connect(host="localhost",user="root",password="****",database="db_name")
     mycursor=mysqldb.cursor()
 
     try:
@@ -99,7 +99,7 @@ def delete():
         mysqldb.close()
 
 def show():
-          mysqldb = mysql.connector.connect(host="localhost", user="root", password="dba1929", database="student_information_system")
+          mysqldb = mysql.connector.connect(host="localhost", user="root", password="*****", database="db_name")
           mycursor = mysqldb.cursor()
           mycursor.execute("SELECT id,stname,course,fee FROM student")
           records = mycursor.fetchall()

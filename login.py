@@ -5,7 +5,7 @@ from subprocess import call
 
 
 def Ok():
-    mysqldb = mysql.connector.connect(host="localhost", user="root", password="dba1929", database="student_information_system")
+    mysqldb = mysql.connector.connect(host="localhost", user="root", password="*****", database="db_name")
     mycursor = mysqldb.cursor()
     uname = e1.get()
     password = e2.get()
